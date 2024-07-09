@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href=""/>
+        <link rel="stylesheet" href="bootstrap.min.css"/>
+        <link rel="icon" href="rosyhair2.jpg"/>
+        <script src="jquery-3.7.1.min (1).js"></script>
+        <title>RosyHair</title>
+        <style>
+         body{
+            font-size: 16px;
+         }
+         @media(min-width:768px) {
+            body{
+               font-size: 18px;
+            }
+         }
+         @media(min-width:1024px){
+            body{
+               font-size: 20px;
+            }
+         }
+        .col{
+          color: white;
+        }
+        .col2{
+            background-color:chartreuse;
+            color: black;
+            border-radius: 10px;
+        }
+        .div1{
+           width: 640px;
+           height: 40px;
+           margin-left: 100px;
+         }
+         nav{
+          border-radius: 10px;
+          background-color: rgb(160, 32, 245);
+          color: white;
+          z-index: 2;
+         }
+         nav a:hover{
+            background-color:white;
+            border-radius: 10px;
+            color: black;
+            z-index: 2;
+         }
+         .search-container{
+              position: relative;
+              display: flex;
+              align-items: center;
+         }
+         #rech{
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 20px;
+              margin-left: 30px;
+              width: 500px;
+         }
+         #search-button,#voice-command-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+         }
+         #search-button img,#voice-command-button img{
+            width: 34px;
+            height: 34px;
+            border-radius: 15px;
+         }
+         .deconect{
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            margin-right: 8px;
+         }
+         .nav-space{
+            margin-left: 120px;
+            color: white;
+         }
+         .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
+         }
+         .image-container{
+            height: 350px; 
+            width: 1318px;
+            background-color: rgb(38, 7, 121);
+            z-index: 1;
+         }
+         img{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+         }
+         .divimg{
+            width: 250px;
+            height: 380px;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+         }
+         .contener{
+            background-color: rgb(15, 15, 92);
+            padding: 8px;
+         }
+         .libelle{
+            margin-top: 10px;
+            margin: 10px;
+         }
+         .img-style{
+            border-radius: 10px;
+            width: 200px;
+            height: 230px;
+            margin-top: 10px;
+         }
+         .divstyle{
+            width: 200px;
+            height: 250px;
+         }
+         .price{
+            margin-top: 8px;
+            color: rgb(4, 82, 4);
+         }
+         .info{
+            z-index: 2;
+            color: white;
+            margin-left: 100px;
+         }
+         .info-style{
+            margin-right: 8px;
+         }
+         .active{
+            width: 380px;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="imageContainer" class="image-container">
+         <table>
+            <tr>
+               <center>
+                  <td style="width: 300px;"></td>
+                  <td><img src="pr1.jpg" id="image1" class="active"/></td>
+                  <td><div class="info">
+                     <p class="info-style"><b><h1>Vente en Gros <br> et en Détaille</h1></b></p>
+                     <p class="info-style"><b><h1>Livraison et Expedition</h1></b></p>
+                  </div></td>
+               </center>
+            </tr>
+            </table>
+        </div>
+        <nav class=" navbar navbar-expand-lg navbar-light bg-blueviolet navbar-expand-lg">
+            <p class="navbar-brand"><div class="div2"></div><img src="rosyhair2.jpg" class="icon"/><strong><h2><b>RosyHair</b></h2></strong></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="div1">
+               <center>
+                  <marquee><p><h3><b>Votre satisfaction est notre priorité !</b></h3></p></marquee>
+               </center>
+            </div>
+            <div  class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  nav-space"><a class="nav-link col" href="#"><strong><img src="appel.jpg" class="deconect"><img src="whatsapp.jpg" class="deconect">6 97 23 76 83</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div id="productContainer" class="contener">
+           <table id="productTable">
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr1.jpg" class="img-style"/><p class="libelle"><h4><b>Bob avec closure<br>Kim T-12<br></p><p class="price">35 000 fcfa</p></b></h4></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr2.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr3.jpg" class="img-style"/><p class="libelle"><h4><b>Cheveux bb avec lace <br><p class="price">25 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr4.jpg" class="img-style"/><p class="libelle"><h4><b>Metissée importée avec lace T-12<br><p class="price">35 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr5.jpg" class="img-style"/><p class="libelle"><h4><b>Bouncy curly avec lace <br><p class="price">70 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr6.jpg" class="img-style"/><p class="libelle"><h4><b>Bob avec closure<br>Kim T-16<br><p class="price">40 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr7.jpg" class="img-style"/><p class="libelle"><h4><b>Deep Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr8.jpg" class="img-style"/><p class="libelle"><h4><b>Deep Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr9.jpg" class="img-style"/><p class="libelle"><h4><b>Deep Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr10.jpg" class="img-style"/><p class="libelle"><h4><b>Metissée guetta<br><p class="price">25 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr11.jpg" class="img-style"/><p class="libelle"><h4><b>Water Waves T-12<br><p class="price">45 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr12.jpg" class="img-style"/><p class="libelle"><h4><b>Deep Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr13.jpg" class="img-style"/><p class="libelle"><h4><b>Body Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr14.jpg" class="img-style"/><p class="libelle"><h4><b>Body Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr15.jpg" class="img-style"/><p class="libelle"><h4><b>Body Wawes<br><p class="price">120 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr16.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie Ondulée<br><p class="price">30 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr17.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr18.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr19.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr20.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr21.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr22.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr23.jpg" class="img-style"/><p class="libelle"><h4><b>Brésilienne T-16,T-20,T-22<br><p class="price">30K,35K et 45K avec closure</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr24.jpg" class="img-style"/><p class="libelle"><h4><b>Cheveux chinois<br><p class="price">15 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="pr25.jpg" class="img-style"/><p class="libelle"><h4><b>Pixie<br><p class="price">20 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h1.jpg" class="img-style"/><p class="libelle"><h4><b>Wax Stick<br><p class="price">2 500 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h2.jpg" class="img-style"/><p class="libelle"><h4><b>Huile de greffe<br><p class="price">1 500 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h3.jpg" class="img-style"/><p class="libelle"><h4><b>Huile de greffe<br><p class="price">1 500 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h4.jpg" class="img-style"/><p class="libelle"><h4><b>Fer a lisser<br><p class="price">7 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h5.jpg" class="img-style"/><p class="libelle"><h4><b>Colle pour lace<br><p class="price">5 000 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+             <tr>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h6.jpg" class="img-style"/><p class="libelle"><h4><b>Huile éssentiel de parfum<br><p class="price"> 500 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h7.jpg" class="img-style"/><p class="libelle"><h4><b>Gel got 2b<br><p class="price">3 000 fcfa</p></b></h4></p></div></center></div></td>
+               <td class="product"><div class="divimg"><center><div class="divstyle"><img src="h8.jpg" class="img-style"/><p class="libelle"><h4><b>Rouge a levre<br><p class="price">500 fcfa</p></b></h4></p></div></center></div></td>
+             </tr>
+           </table>
+        </div>
+    </body>
+    <script>
+         $(document).ready(function(){
+            var images = [,"pr1.jpg","pr2.jpg","pr3.jpg","pr4.jpg","pr5.jpg","pr6.jpg","pr7.jpg","pr8.jpg","pr9.jpg","pr10.jpg","pr11.jpg"
+            ,"pr12.jpg","pr13.jpg","pr14.jpg","pr15.jpg","pr16.jpg","pr17.jpg","pr18.jpg","pr19.jpg","pr20.jpg","pr21.jpg","pr22.jpg","pr23.jpg"
+            ,"pr24.jpg","pr25.jpg"];
+            var index = 0;
+            function changeImage(){
+                $("#imageContainer img").fadeOut("slow",function(){
+                    $(this).attr("src",images[index]);
+                    index = (index+1)% images.length;
+                    $(this).fadeIn("slow");
+                });
+            }
+            setInterval(changeImage,10000);
+        });
+
+        $(document).ready(function(){
+         $("#rech").on("input",function(){
+            var searchValue = $(this).val().toLowerCase();
+            $("#productTable.libelle").each(function(){
+               var productName = $(this).text().toLowerCase();
+               if(productName.includes(searchValue)){
+                  $(this).closest("td").css("display","table-cell");
+                  $(this).closest("tr").parent().css("display","table-row");
+                  $(this).closest("#productContainer").css("display","bolck");
+               } else{
+                  $(this).closest("td").css("display","none");
+               }
+            });
+         });
+        });
+
+       /* document.getElementById("rech").addEventListener("input",function(){
+         var searchValue = this.value.toLowerCase();
+         var products = document.querySelectorAll(productTable.product);
+         products.forEach(function(product){
+            var productName = product.textContent.toLocaleLowerCase();
+            if(productName.includes(searchValue)){
+               product.style.display = "table-cell";
+               product.parentNode.style.display = "table-row";
+               product.parentNode.style.display = "block";
+            } else{
+               product.style.display = "none";
+            }
+         });
+              });*/
+    </script>
+</html>
